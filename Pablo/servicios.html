@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Clínica Capurri S.A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal': '#00B4C5',
+                        'teal-dark': '#009AAB',
+                        'navy': '#2C5F7C',
+                        'green-card': '#7FBF3F',
+                        'yellow-card': '#F5B842',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-teal transition">Inicio</a>
+                    <a href="quienes-somos.html" class="text-gray-700 hover:text-teal transition">Quiénes somos</a>
+                    <a href="servicios.html" class="text-teal font-semibold">Servicios</a>
+                    <a href="noticias.html" class="text-gray-700 hover:text-teal transition">Noticias</a>
+                    <a href="contactanos.html" class="text-gray-700 hover:text-teal transition">Contáctanos</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal to-teal-dark py-20">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl lg:text-6xl font-bold text-white text-center">
+                NUESTROS SERVICIOS
+            </h1>
+            <p class="text-white text-center mt-4 text-lg">
+                Servicios médicos de alta calidad para cuidar tu salud y la de tu familia
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Grid -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                
+                <!-- Urgencias 24/7 -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
+                        <i class="fas fa-ambulance text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Urgencias 24/7</h3>
+                        <p class="text-gray-600 mb-4">
+                            Atención de emergencias las 24 horas del día, los 7 días de la semana con personal médico especializado.
+                        </p>
+                        <a href="servicio-urgencias.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hospitalización -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-bed text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Hospitalización</h3>
+                        <p class="text-gray-600 mb-4">
+                            Habitaciones cómodas y equipadas con tecnología moderna para garantizar tu recuperación.
+                        </p>
+                        <a href="servicio-hospitalizacion.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cirugía -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
+                        <i class="fas fa-procedures text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Cirugía</h3>
+                        <p class="text-gray-600 mb-4">
+                            Quirófanos equipados con tecnología de punta y equipo médico altamente calificado.
+                        </p>
+                        <a href="servicio-cirugia.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Laboratorio Clínico -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-vial text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Laboratorio Clínico</h3>
+                        <p class="text-gray-600 mb-4">
+                            Análisis clínicos con resultados rápidos y confiables utilizando equipos de última generación.
+                        </p>
+                        <a href="servicio-laboratorio.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Rayos X -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-x-ray text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Rayos X</h3>
+                        <p class="text-gray-600 mb-4">
+                            Servicio de radiología digital para diagnósticos precisos y oportunos.
+                        </p>
+                        <a href="servicio-rayosx.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Consulta Externa -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
+                        <i class="fas fa-stethoscope text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Consulta Externa</h3>
+                        <p class="text-gray-600 mb-4">
+                            Atención médica especializada en diversas áreas con profesionales calificados.
+                        </p>
+                        <a href="servicio-consulta.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Farmacia -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center">
+                        <i class="fas fa-pills text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Farmacia</h3>
+                        <p class="text-gray-600 mb-4">
+                            Dispensación de medicamentos con asesoría farmacéutica profesional.
+                        </p>
+                        <a href="servicio-farmacia.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Vacunación -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
+                        <i class="fas fa-syringe text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Vacunación</h3>
+                        <p class="text-gray-600 mb-4">
+                            Programa completo de vacunación para niños y adultos según esquema nacional.
+                        </p>
+                        <a href="servicio-vacunacion.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Odontología -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
+                        <i class="fas fa-tooth text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Odontología</h3>
+                        <p class="text-gray-600 mb-4">
+                            Servicios odontológicos integrales para mantener tu salud bucal en óptimas condiciones.
+                        </p>
+                        <a href="servicio-odontologia.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
+                SERVICIOS ESPECIALIZADOS
+            </h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-navy mb-3">
+                        <i class="fas fa-baby text-teal mr-2"></i>
+                        Pediatría
+                    </h3>
+                    <p class="text-gray-600">
+                        Atención integral para el crecimiento y desarrollo saludable de tus hijos.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-navy mb-3">
+                        <i class="fas fa-female text-teal mr-2"></i>
+                        Ginecología y Obstetricia
+                    </h3>
+                    <p class="text-gray-600">
+                        Cuidado especializado de la salud femenina en todas las etapas de la vida.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-navy mb-3">
+                        <i class="fas fa-heartbeat text-teal mr-2"></i>
+                        Medicina Interna
+                    </h3>
+                    <p class="text-gray-600">
+                        Diagnóstico y tratamiento integral de enfermedades en adultos.
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <h3 class="text-xl font-bold text-navy mb-3">
+                        <i class="fas fa-user-md text-teal mr-2"></i>
+                        Medicina General
+                    </h3>
+                    <p class="text-gray-600">
+                        Atención primaria para toda la familia con enfoque preventivo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

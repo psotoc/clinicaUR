@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos - Clínica Capurri S.A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal': '#00B4C5',
+                        'teal-dark': '#009AAB',
+                        'navy': '#2C5F7C',
+                        'green-card': '#7FBF3F',
+                        'yellow-card': '#F5B842',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-teal transition">Inicio</a>
+                    <a href="quienes-somos.html" class="text-teal font-semibold">Quiénes somos</a>
+                    <a href="servicios.html" class="text-gray-700 hover:text-teal transition">Servicios</a>
+                    <a href="noticias.html" class="text-gray-700 hover:text-teal transition">Noticias</a>
+                    <a href="contactanos.html" class="text-gray-700 hover:text-teal transition">Contáctanos</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal to-teal-dark py-20">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl lg:text-6xl font-bold text-white text-center">
+                QUIÉNES SOMOS
+            </h1>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                <!-- Misión -->
+                <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-teal rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-bullseye text-white text-2xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-navy">MISIÓN</h2>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Prestar servicios de salud con calidad, calidez y seguridad, centrados en el paciente y su familia, 
+                        con un equipo humano competente y comprometido, tecnología adecuada y procesos eficientes que 
+                        garanticen la sostenibilidad financiera y la responsabilidad social.
+                    </p>
+                </div>
+
+                <!-- Visión -->
+                <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-green-card rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-eye text-white text-2xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-navy">VISIÓN</h2>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">
+                        Ser reconocidos en 2025 como la mejor institución prestadora de servicios de salud en la región 
+                        del Urabá, destacándonos por nuestra excelencia clínica, innovación tecnológica y compromiso 
+                        con el bienestar integral de nuestros pacientes y la comunidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
+                NUESTROS VALORES
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-teal rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-navy">Humanización</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-green-card rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-shield-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-navy">Seguridad</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-yellow-card rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-medal text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-navy">Calidad</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-navy">Compromiso</h3>
+                </div>
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-teal-dark rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-white text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-navy">Trabajo en Equipo</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
+                NUESTRA HISTORIA
+            </h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-teal to-teal-dark rounded-3xl p-8 text-white">
+                    <p class="leading-relaxed mb-4">
+                        La Clínica Capurri S.A nació en 1995 con el propósito de brindar servicios de salud de alta 
+                        calidad a la región del Urabá Antioqueño. Desde nuestros inicios, hemos trabajado 
+                        incansablemente para convertirnos en un referente de excelencia médica en la zona.
+                    </p>
+                    <p class="leading-relaxed mb-4">
+                        A lo largo de estos años, hemos ampliado nuestras instalaciones, incorporado tecnología de 
+                        vanguardia y formado un equipo de profesionales altamente calificados, siempre manteniendo 
+                        nuestro compromiso con la humanización del servicio y el bienestar integral de nuestros pacientes.
+                    </p>
+                    <p class="leading-relaxed">
+                        Hoy, más de 25 años después, continuamos evolucionando para responder a las necesidades de 
+                        salud de nuestra comunidad, con la misma pasión y dedicación del primer día.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
+                NUESTRO EQUIPO DIRECTIVO
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
+                    <h3 class="font-bold text-lg text-navy">Dr. Juan Pérez</h3>
+                    <p class="text-gray-600">Director General</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
+                    <h3 class="font-bold text-lg text-navy">Dra. María García</h3>
+                    <p class="text-gray-600">Directora Médica</p>
+                </div>
+                <div class="text-center">
+                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
+                    <h3 class="font-bold text-lg text-navy">Lic. Carlos López</h3>
+                    <p class="text-gray-600">Director Administrativo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

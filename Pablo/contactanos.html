@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos - Clínica Capurri S.A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal': '#00B4C5',
+                        'teal-dark': '#009AAB',
+                        'navy': '#2C5F7C',
+                        'green-card': '#7FBF3F',
+                        'yellow-card': '#F5B842',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-teal transition">Inicio</a>
+                    <a href="quienes-somos.html" class="text-gray-700 hover:text-teal transition">Quiénes somos</a>
+                    <a href="servicios.html" class="text-gray-700 hover:text-teal transition">Servicios</a>
+                    <a href="noticias.html" class="text-gray-700 hover:text-teal transition">Noticias</a>
+                    <a href="contactanos.html" class="text-teal font-semibold">Contáctanos</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-teal to-teal-dark py-20">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl lg:text-6xl font-bold text-white text-center">
+                CONTÁCTANOS
+            </h1>
+            <p class="text-white text-center mt-4 text-lg">
+                Estamos aquí para atenderte y resolver todas tus inquietudes
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+                
+                <!-- Contact Form -->
+                <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
+                    <h2 class="text-3xl font-bold text-navy mb-6">Envíanos un mensaje</h2>
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">
+                                Nombre completo *
+                            </label>
+                            <input 
+                                type="text" 
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal"
+                                placeholder="Tu nombre completo"
+                            >
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">
+                                    Correo electrónico *
+                                </label>
+                                <input 
+                                    type="email" 
+                                    required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal"
+                                    placeholder="tu@email.com"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">
+                                    Teléfono *
+                                </label>
+                                <input 
+                                    type="tel" 
+                                    required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal"
+                                    placeholder="300 123 4567"
+                                >
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">
+                                Tipo de consulta
+                            </label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal">
+                                <option>Información general</option>
+                                <option>Citas médicas</option>
+                                <option>Urgencias</option>
+                                <option>Quejas y reclamos</option>
+                                <option>Felicitaciones</option>
+                                <option>Otro</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">
+                                Mensaje *
+                            </label>
+                            <textarea 
+                                required
+                                rows="5"
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal"
+                                placeholder="Escribe tu mensaje aquí..."
+                            ></textarea>
+                        </div>
+
+                        <div>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2" required>
+                                <span class="text-sm text-gray-600">
+                                    Acepto el tratamiento de mis datos personales según la política de privacidad
+                                </span>
+                            </label>
+                        </div>
+
+                        <button 
+                            type="submit"
+                            onclick="showConfirmation(event)"
+                            class="w-full bg-teal text-white py-3 rounded-full font-semibold hover:bg-teal-dark transition"
+                        >
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h2 class="text-3xl font-bold text-navy mb-8">Información de contacto</h2>
+                    
+                    <!-- Contact Cards -->
+                    <div class="space-y-6">
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-teal rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-navy mb-2">Dirección</h3>
+                                    <p class="text-gray-600">
+                                        Carrera 98 # 102 - 11/13/15<br>
+                                        Apartadó, Antioquia<br>
+                                        Código Postal: 057840
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-green-card rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-navy mb-2">Teléfonos</h3>
+                                    <p class="text-gray-600">
+                                        Línea principal: (604) 828 0000<br>
+                                        Urgencias: (604) 828 0001<br>
+                                        WhatsApp: 300 123 4567
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-yellow-card rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-navy mb-2">Correo electrónico</h3>
+                                    <p class="text-gray-600">
+                                        info@clinicacapurri.com<br>
+                                        citas@clinicacapurri.com<br>
+                                        juridico@clinicacapurri.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl p-6 shadow-lg">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-navy rounded-full flex items-center justify-center mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg text-navy mb-2">Horario de atención</h3>
+                                    <p class="text-gray-600">
+                                        <strong>Administración:</strong><br>
+                                        Lunes a Viernes: 7:00 AM - 5:00 PM<br>
+                                        Sábados: 7:00 AM - 12:00 PM<br>
+                                        <strong>Urgencias:</strong> 24/7
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h3 class="font-bold text-lg text-navy mb-4">Síguenos en redes sociales</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white hover:bg-green-600 transition">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy text-center mb-8">Encuéntranos</h2>
+            <div class="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-xl">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8!2d-76.6!3d7.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDgnMDAuMCJOIDc2wrAzNicwMC4wIlc!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+                    width="100%"
+                    height="500"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy text-center mb-12">Preguntas Frecuentes</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <details class="bg-gray-50 rounded-2xl p-6 cursor-pointer">
+                    <summary class="font-bold text-lg text-navy">¿Cómo puedo agendar una cita médica?</summary>
+                    <p class="text-gray-600 mt-4">
+                        Puedes agendar tu cita llamando a nuestra línea principal (604) 828 0000, 
+                        a través de WhatsApp al 300 123 4567, o enviándonos un correo a citas@clinicacapurri.com
+                    </p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-2xl p-6 cursor-pointer">
+                    <summary class="font-bold text-lg text-navy">¿Qué documentos necesito para ser atendido?</summary>
+                    <p class="text-gray-600 mt-4">
+                        Para ser atendido necesitas presentar tu documento de identidad, carnet de la EPS 
+                        o seguro médico, y la orden médica si es una consulta especializada.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-2xl p-6 cursor-pointer">
+                    <summary class="font-bold text-lg text-navy">¿Atienden urgencias las 24 horas?</summary>
+                    <p class="text-gray-600 mt-4">
+                        Sí, nuestro servicio de urgencias está disponible las 24 horas del día, 
+                        los 7 días de la semana, incluyendo festivos.
+                    </p>
+                </details>
+                
+                <details class="bg-gray-50 rounded-2xl p-6 cursor-pointer">
+                    <summary class="font-bold text-lg text-navy">¿Cuáles son los medios de pago aceptados?</summary>
+                    <p class="text-gray-600 mt-4">
+                        Aceptamos efectivo, tarjetas de crédito y débito, transferencias bancarias, 
+                        y convenios con EPS y seguros médicos.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmation Modal (Hidden by default) -->
+    <div id="confirmationModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+        <div class="bg-white rounded-3xl p-8 max-w-md mx-4 transform scale-95 transition-transform">
+            <div class="text-center">
+                <div class="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-check text-white text-3xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-navy mb-4">¡Mensaje enviado!</h3>
+                <p class="text-gray-600 mb-6">
+                    Hemos recibido tu mensaje correctamente. Nos pondremos en contacto contigo 
+                    lo antes posible.
+                </p>
+                <button 
+                    onclick="closeConfirmation()"
+                    class="bg-teal text-white px-8 py-3 rounded-full font-semibold hover:bg-teal-dark transition"
+                >
+                    Entendido
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault();
+            const form = document.getElementById('contactForm');
+            if (form.checkValidity()) {
+                document.getElementById('confirmationModal').classList.remove('hidden');
+                document.getElementById('confirmationModal').querySelector('div').classList.add('scale-100');
+                form.reset();
+            } else {
+                form.reportValidity();
+            }
+        }
+
+        function closeConfirmation() {
+            document.getElementById('confirmationModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>

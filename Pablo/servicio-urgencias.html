@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Urgencias 24/7 - Clínica Capurri S.A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal': '#00B4C5',
+                        'teal-dark': '#009AAB',
+                        'navy': '#2C5F7C',
+                        'green-card': '#7FBF3F',
+                        'yellow-card': '#F5B842',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-teal transition">Inicio</a>
+                    <a href="quienes-somos.html" class="text-gray-700 hover:text-teal transition">Quiénes somos</a>
+                    <a href="servicios.html" class="text-gray-700 hover:text-teal transition">Servicios</a>
+                    <a href="noticias.html" class="text-gray-700 hover:text-teal transition">Noticias</a>
+                    <a href="contactanos.html" class="text-gray-700 hover:text-teal transition">Contáctanos</a>
+                </div>
+                <button onclick="closeService()" class="text-gray-700 hover:text-red-500 transition">
+                    <i class="fas fa-times text-2xl"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Service Detail Modal Style -->
+    <section class="min-h-screen bg-gradient-to-br from-red-50 to-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden">
+                
+                <!-- Service Header -->
+                <div class="bg-gradient-to-br from-red-500 to-red-600 p-12 text-white">
+                    <div class="flex items-center justify-center mb-6">
+                        <div class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center">
+                            <i class="fas fa-ambulance text-5xl"></i>
+                        </div>
+                    </div>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-center mb-4">
+                        Urgencias 24/7
+                    </h1>
+                    <p class="text-xl text-center opacity-90">
+                        Atención inmediata cuando más lo necesitas
+                    </p>
+                </div>
+
+                <!-- Service Content -->
+                <div class="p-8 lg:p-12">
+                    
+                    <!-- Description -->
+                    <div class="mb-10">
+                        <h2 class="text-2xl font-bold text-navy mb-4 flex items-center">
+                            <i class="fas fa-info-circle text-teal mr-3"></i>
+                            Descripción del Servicio
+                        </h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            Nuestro servicio de urgencias está disponible las 24 horas del día, los 365 días del año, 
+                            para atender cualquier emergencia médica. Contamos con un equipo multidisciplinario de 
+                            profesionales especializados en medicina de emergencias, equipados con tecnología de 
+                            última generación para brindar diagnósticos rápidos y tratamiento oportuno.
+                        </p>
+                    </div>
+
+                    <!-- Features Grid -->
+                    <div class="mb-10">
+                        <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
+                            <i class="fas fa-star text-yellow-500 mr-3"></i>
+                            Características Principales
+                        </h2>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Atención 24/7</h3>
+                                    <p class="text-gray-600 text-sm">Sin interrupciones, todos los días del año</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Triage rápido</h3>
+                                    <p class="text-gray-600 text-sm">Clasificación inmediata según gravedad</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Equipo especializado</h3>
+                                    <p class="text-gray-600 text-sm">Médicos emergenciólogos certificados</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Tecnología avanzada</h3>
+                                    <p class="text-gray-600 text-sm">Equipos de diagnóstico de última generación</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Services Included -->
+                    <div class="mb-10">
+                        <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
+                            <i class="fas fa-list-ul text-teal mr-3"></i>
+                            Servicios Incluidos
+                        </h2>
+                        <div class="bg-gray-50 rounded-2xl p-6">
+                            <ul class="space-y-3">
+                                <li class="flex items-center">
+                                    <i class="fas fa-chevron-right text-teal mr-3"></i>
+                                    <span class="text-gray-700">Evaluación médica inmediata</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-chevron-right text-teal mr-3"></i>
+                                    <span class="text-gray-700">Estabilización de pacientes críticos</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-chevron-right text-teal mr-3"></i>
+                                    <span class="text-gray-700">Diagnóstico por imágenes (Rayos X, Tomografía)</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-chevron-right text-teal mr-3"></i>
+                                    <span class="text-gray-700">Laboratorio clínico 24 horas</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-chevron-right text-teal mr-3"></i>
+                                    <span class="text-gray-700">Sala de observación</span>
+                                </li>
+                                <li class="flex items-center">
+                                    <i class="fas fa-chevron-right text-teal mr-3"></i>
+                                    <span class="text-gray-700">Traslado a hospitalización si es necesario</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Process -->
+                    <div class="mb-10">
+                        <h2 class="text-2xl font-bold text-navy mb-6 flex items-center">
+                            <i class="fas fa-procedures text-teal mr-3"></i>
+                            Proceso de Atención
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="flex">
+                                <div class="w-10 h-10 bg-teal text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    1
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Recepción y registro</h3>
+                                    <p class="text-gray-600 text-sm">Ingreso rápido con documentación básica</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-10 h-10 bg-teal text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    2
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Triage</h3>
+                                    <p class="text-gray-600 text-sm">Clasificación según nivel de urgencia</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-10 h-10 bg-teal text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    3
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Atención médica</h3>
+                                    <p class="text-gray-600 text-sm">Evaluación y tratamiento por especialistas</p>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <div class="w-10 h-10 bg-teal text-white rounded-full flex items-center justify-center font-bold mr-4 flex-shrink-0">
+                                    4
+                                </div>
+                                <div>
+                                    <h3 class="font-semibold text-gray-800">Alta o hospitalización</h3>
+                                    <p class="text-gray-600 text-sm">Según evaluación médica</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Important Info -->
+                    <div class="mb-10">
+                        <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg">
+                            <h3 class="font-bold text-gray-800 mb-2 flex items-center">
+                                <i class="fas fa-exclamation-triangle text-yellow-600 mr-2"></i>
+                                Información Importante
+                            </h3>
+                            <ul class="text-gray-700 space-y-2 text-sm">
+                                <li>• Los menores de edad deben estar acompañados por un adulto responsable</li>
+                                <li>• Traer documento de identidad y carnet de EPS o seguro médico</li>
+                                <li>• En la sala de urgencias solo puede permanecer un acompañante</li>
+                                <li>• Los tiempos de espera dependen del nivel de urgencia asignado</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact CTA -->
+                    <div class="text-center bg-gradient-to-r from-teal to-teal-dark rounded-2xl p-8 text-white">
+                        <h3 class="text-2xl font-bold mb-4">¿Necesitas atención urgente?</h3>
+                        <p class="mb-6">Llámanos inmediatamente o acércate a nuestras instalaciones</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="tel:6048280001" class="bg-white text-teal px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+                                <i class="fas fa-phone mr-2"></i>
+                                (604) 828 0001
+                            </a>
+                            <a href="contactanos.html" class="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-teal transition">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Ver ubicación
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function closeService() {
+            window.location.href = 'servicios.html';
+        }
+    </script>
+</body>
+</html>

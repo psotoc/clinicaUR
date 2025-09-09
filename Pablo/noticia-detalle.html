@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Unidad de Cuidados Intensivos - Clínica Capurri S.A</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'teal': '#00B4C5',
+                        'teal-dark': '#009AAB',
+                        'navy': '#2C5F7C',
+                        'green-card': '#7FBF3F',
+                        'yellow-card': '#F5B842',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    <!-- Header Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                <div class="flex items-center">
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-teal transition">Inicio</a>
+                    <a href="quienes-somos.html" class="text-gray-700 hover:text-teal transition">Quiénes somos</a>
+                    <a href="servicios.html" class="text-gray-700 hover:text-teal transition">Servicios</a>
+                    <a href="noticias.html" class="text-gray-700 hover:text-teal transition">Noticias</a>
+                    <a href="contactanos.html" class="text-gray-700 hover:text-teal transition">Contáctanos</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="py-4 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm">
+                <a href="index.html" class="text-gray-600 hover:text-teal">Inicio</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <a href="noticias.html" class="text-gray-600 hover:text-teal">Noticias</a>
+                <span class="mx-2 text-gray-400">/</span>
+                <span class="text-teal">Nueva Unidad de Cuidados Intensivos</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Article Content -->
+    <article class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <!-- Article Header -->
+                <header class="mb-8">
+                    <span class="inline-block bg-teal text-white px-3 py-1 rounded-full text-sm mb-4">
+                        Destacado
+                    </span>
+                    <h1 class="text-4xl lg:text-5xl font-bold text-navy mb-4">
+                        Nueva Unidad de Cuidados Intensivos
+                    </h1>
+                    <div class="flex items-center space-x-4 text-gray-600">
+                        <span><i class="far fa-calendar mr-2"></i>15 de Diciembre, 2024</span>
+                        <span><i class="far fa-clock mr-2"></i>5 min de lectura</span>
+                        <span><i class="far fa-user mr-2"></i>Comunicaciones</span>
+                    </div>
+                </header>
+
+                <!-- Featured Image -->
+                <div class="mb-8 rounded-3xl overflow-hidden shadow-lg">
+                    <div class="h-96 bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
+                        <i class="fas fa-hospital text-white text-8xl"></i>
+                    </div>
+                </div>
+
+                <!-- Article Body -->
+                <div class="prose prose-lg max-w-none">
+                    <p class="text-lg leading-relaxed text-gray-700 mb-6">
+                        <strong>Nos complace anunciar la apertura de nuestra nueva Unidad de Cuidados Intensivos (UCI), 
+                        un hito significativo en nuestro compromiso continuo con la excelencia en la atención médica 
+                        en la región del Urabá.</strong> Esta moderna instalación representa una inversión importante 
+                        en tecnología de vanguardia y está diseñada para brindar el más alto nivel de cuidado a 
+                        pacientes en estado crítico.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-navy mt-8 mb-4">
+                        Tecnología de Última Generación
+                    </h2>
+                    <p class="text-gray-700 mb-6">
+                        La nueva UCI está equipada con 12 camas individuales, cada una con monitores multiparamétricos 
+                        de última generación, ventiladores mecánicos de alta precisión y sistemas de soporte vital 
+                        avanzados. Hemos implementado un sistema centralizado de monitoreo que permite a nuestro 
+                        personal médico supervisar constantemente a todos los pacientes desde una estación central, 
+                        garantizando una respuesta inmediata ante cualquier cambio en su condición.
+                    </p>
+
+                    <h2 class="text-2xl font-bold text-navy mt-8 mb-4">
+                        Personal Altamente Especializado
+                    </h2>
+                    <p class="text-gray-700 mb-6">
+                        Para garantizar la mejor atención posible, hemos conformado un equipo multidisciplinario 
+                        de especialistas en medicina crítica, incluyendo intensivistas, enfermeras especializadas 
+                        en cuidados intensivos, terapeutas respiratorios y fisioterapeutas. Todo nuestro personal 
+                        ha recibido capacitación especializada en el manejo de los nuevos equipos y protocolos de 
+                        atención.
+                    </p>
+
+                    <div class="bg-teal/10 border-l-4 border-teal p-6 my-8 rounded-r-lg">
+                        <p class="text-gray-700 italic">
+                            "Esta nueva unidad representa nuestro compromiso inquebrantable con la salud y el 
+                            bienestar de nuestra comunidad. Estamos orgullosos de poder ofrecer servicios de 
+                            cuidados intensivos al más alto nivel, comparables con los mejores centros médicos 
+                            del país."
+                        </p>
+                        <p class="text-sm text-gray-600 mt-2">
+                            - Dr. Juan Pérez, Director General
+                        </p>
+                    </div>
+
+                    <h2 class="text-2xl font-bold text-navy mt-8 mb-4">
+                        Características Especiales de la Nueva UCI
+                    </h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-2 mb-6">
+                        <li>Sistema de filtración de aire con presión positiva para prevenir infecciones</li>
+                        <li>Habitaciones individuales con aislamiento acústico</li>
+                        <li>Área dedicada para familiares con sala de espera confortable</li>
+                        <li>Equipos de diálisis y hemodiálisis disponibles las 24 horas</li>
+                        <li>Laboratorio de análisis rápidos integrado</li>
+                        <li>Sistema de telemedicina para consultas con especialistas externos</li>
+                    </ul>
+
+                    <h2 class="text-2xl font-bold text-navy mt-8 mb-4">
+                        Impacto en la Comunidad
+                    </h2>
+                    <p class="text-gray-700 mb-6">
+                        La apertura de esta UCI significa que los pacientes de la región ya no tendrán que ser 
+                        trasladados a ciudades distantes para recibir cuidados intensivos especializados. Esto 
+                        no solo mejora las posibilidades de recuperación al reducir los tiempos de traslado en 
+                        situaciones críticas, sino que también permite que las familias permanezcan cerca de sus 
+                        seres queridos durante momentos difíciles.
+                    </p>
+
+                    <p class="text-gray-700 mb-6">
+                        Invitamos a toda la comunidad a conocer nuestras nuevas instalaciones durante las jornadas 
+                        de puertas abiertas que realizaremos del 20 al 22 de diciembre. Para más información sobre 
+                        horarios y registro, pueden contactarnos a través de nuestros canales oficiales.
+                    </p>
+                </div>
+
+                <!-- Share Section -->
+                <div class="mt-12 pt-8 border-t border-gray-200">
+                    <h3 class="text-lg font-bold text-navy mb-4">Compartir esta noticia</h3>
+                    <div class="flex space-x-4">
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+                            <i class="fab fa-facebook-f mr-2"></i>Facebook
+                        </button>
+                        <button class="bg-blue-400 text-white px-4 py-2 rounded-lg hover:bg-blue-500 transition">
+                            <i class="fab fa-twitter mr-2"></i>Twitter
+                        </button>
+                        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+                            <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <!-- Related News -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-navy text-center mb-12">
+                Noticias Relacionadas
+            </h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Related Article 1 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-user-md text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-3">
+                            Nuevo Especialista en Cardiología
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Damos la bienvenida al Dr. Roberto Méndez, especialista en cardiología.
+                        </p>
+                        <a href="#" class="text-teal hover:text-teal-dark font-semibold">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Related Article 2 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-microscope text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-3">
+                            Nuevo Equipo de Resonancia Magnética
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Tecnología de última generación para diagnósticos más precisos.
+                        </p>
+                        <a href="#" class="text-teal hover:text-teal-dark font-semibold">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Related Article 3 -->
+                <article class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition">
+                    <div class="h-48 bg-gradient-to-br from-yellow-400 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-award text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-navy mb-3">
+                            Premio a la Excelencia Médica
+                        </h3>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Reconocimiento del Ministerio de Salud por nuestra calidad.
+                        </p>
+                        <a href="#" class="text-teal hover:text-teal-dark font-semibold">
+                            Leer más →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+                <a href="#" class="text-white hover:text-teal transition">
+                    <i class="fab fa-facebook text-2xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
