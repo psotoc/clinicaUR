@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes Somos - Clínica Capurri S.A</title>
+    <title>Quiénes Somos - Clínica Chinita S.A</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -16,6 +19,9 @@
                         'navy': '#2C5F7C',
                         'green-card': '#7FBF3F',
                         'yellow-card': '#F5B842',
+                    },
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
                     }
                 }
             }
@@ -28,16 +34,17 @@
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between py-4">
                 <div class="flex items-center">
-                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Chinita S.A" class="h-12"></a>
+                </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-teal transition">Inicio</a>
-                    <a href="quienes-somos.html" class="text-teal font-semibold">Quiénes somos</a>
-                    <a href="servicios.html" class="text-gray-700 hover:text-teal transition">Servicios</a>
-                    <a href="noticias.html" class="text-gray-700 hover:text-teal transition">Noticias</a>
-                    <a href="contactanos.html" class="text-gray-700 hover:text-teal transition">Contáctanos</a>
+                    <a href="index.html" class="text-green-600 hover:text-green-700 transition">Inicio</a>
+                    <a href="quienes-somos.html" class="text-green-600 font-semibold">Quiénes somos</a>
+                    <a href="servicios.html" class="text-green-600 hover:text-green-700 transition">Servicios</a>
+                    <a href="noticias.html" class="text-green-600 hover:text-green-700 transition">Noticias</a>
+                    <a href="contactanos.html" class="text-green-600 hover:text-green-700 transition">Contáctanos</a>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-gray-700">
+                    <button class="text-white">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -46,9 +53,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-teal to-teal-dark py-20">
-        <div class="container mx-auto px-4">
-            <h1 class="text-4xl lg:text-6xl font-bold text-white text-center">
+    <section class="relative py-24 lg:py-28 bg-cover bg-center bg-no-repeat min-h-[400px] lg:min-h-[450px]" style="background-image: url('recursos/quienesBanner.png');">
+        <div class="absolute inset-0 bg-teal bg-opacity-60"></div>
+        <div class="container mx-auto px-4 text-center relative z-10 flex items-center justify-center h-full">
+            <h1 class="text-4xl lg:text-6xl font-bold text-white mb-4">
                 QUIÉNES SOMOS
             </h1>
         </div>
@@ -57,129 +65,148 @@
     <!-- Mission & Vision Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <!-- Misión -->
-                <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-teal rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-bullseye text-white text-2xl"></i>
-                        </div>
-                        <h2 class="text-3xl font-bold text-navy">MISIÓN</h2>
-                    </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Prestar servicios de salud con calidad, calidez y seguridad, centrados en el paciente y su familia, 
-                        con un equipo humano competente y comprometido, tecnología adecuada y procesos eficientes que 
-                        garanticen la sostenibilidad financiera y la responsabilidad social.
+                <div class="bg-white border border-teal rounded-3xl p-8 shadow-lg">
+                    <h2 class="text-3xl font-bold text-teal mb-6">Misión</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Mejorar la calidad de vida de los habitantes de la región de Urabá, contribuyendo a la recuperación y 
+                        rehabilitación de sus condiciones físicas y psicológicas, a través de la prestación de servicios de salud 
+                        de baja y mediana complejidad con personal íntegro y calificado, enfocándonos en la mejora continua 
+                        de prácticas seguras y el uso eficiente de los recursos humanos, tecnológicos y financieros, que 
+                        permitan satisfacer las necesidades de nuestros usuarios y demás grupos de interés.
                     </p>
                 </div>
 
                 <!-- Visión -->
-                <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
-                    <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 bg-green-card rounded-full flex items-center justify-center mr-4">
-                            <i class="fas fa-eye text-white text-2xl"></i>
-                        </div>
-                        <h2 class="text-3xl font-bold text-navy">VISIÓN</h2>
-                    </div>
-                    <p class="text-gray-700 leading-relaxed">
-                        Ser reconocidos en 2025 como la mejor institución prestadora de servicios de salud en la región 
-                        del Urabá, destacándonos por nuestra excelencia clínica, innovación tecnológica y compromiso 
-                        con el bienestar integral de nuestros pacientes y la comunidad.
+                <div class="bg-white border border-teal rounded-3xl p-8 shadow-lg">
+                    <h2 class="text-3xl font-bold text-teal mb-6">Visión</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        Ser una organización sostenible y líder en la prestación integral de servicios de salud, comprometida 
+                        con el desarrollo social de la región de Urabá.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Values Section -->
+    <!-- Objectives Section -->
     <section class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12">
+                <span class="text-teal">NUESTROS</span> <span class="text-navy">OBJETIVOS</span>
+            </h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                <!-- Objetivo 1 -->
+                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
+                    <h4 class="text-xl font-bold mb-4">PRODUCIR</h4>
+                    <p class="text-sm leading-relaxed">
+                        Garantizar, mediante un manejo gerencial apropiado, la rentabilidad social y financiera de la empresa.
+                    </p>
+                </div>
+
+                <!-- Objetivo 2 -->
+                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
+                    <h4 class="text-xl font-bold mb-4"></h4>
+                    <p class="text-sm leading-relaxed">
+                        Satisfacer los requerimientos del entorno, adecuando continuamente los servicios y su funcionamiento.
+                    </p>
+                </div>
+
+                <!-- Objetivo 3 -->
+                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
+                    <p class="text-sm leading-relaxed">
+                        Prestar servicios de salud que satisfagan de manera óptima las necesidades y expectativas de la población usuaria.
+                    </p>
+                </div>
+
+                <!-- Objetivo 4 -->
+                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
+                    <p class="text-sm leading-relaxed">
+                        Contribuir al desarrollo social, mejorando la calidad de vida y reduciendo la Morbimortalidad, en la población usuaria.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organigrama Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl lg:text-4xl font-bold mb-12 text-teal">
+                ORGANIGRAMA
+            </h2>
+            
+            <div class="max-w-6xl mx-auto text-right">
+                <img src="recursos/organigrama.png" alt="Organigrama Clínica Chinita S.A" class="w-full h-auto ml-auto pl-8 lg:pl-12">
+            </div>
+        </div>
+    </section>
+
+    <!-- Corporate Values Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-2 text-teal">
                 NUESTROS VALORES
             </h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-teal rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-heart text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-navy">Humanización</h3>
+            <h3 class="text-3xl lg:text-4xl font-bold text-center mb-8 text-navy">
+                CORPORATIVOS
+            </h3>
+            
+            <div class="max-w-4xl mx-auto mb-12">
+                <div class="bg-white border border-teal rounded-3xl p-8 text-center">
+                    <p class="text-gray-700 leading-relaxed text-lg">
+                        La familia Clínica Chinita S.A., está conformada por todo el personal que 
+                        interviene en la prestación del servicio de salud y se fundamenta en una 
+                        cultura organizacional de principios, que permitan el logro de los objetivos 
+                        estratégicos de la organización. De manera que es nuestro interés promover 
+                        todos los valores, pero en especial caracterizarnos por:
+                    </p>
                 </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-green-card rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-shield-alt text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-navy">Seguridad</h3>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <!-- Responsabilidad -->
+                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center">
+                    <h4 class="text-2xl font-bold mb-4">RESPONSABILIDAD</h4>
+                    <p class="text-sm leading-relaxed">
+                        Con el ejercicio de nuestro trabajo y todas las actividades para garantizar la seguridad del paciente
+                    </p>
                 </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-yellow-card rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-medal text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-navy">Calidad</h3>
+
+                <!-- Respeto -->
+                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center">
+                    <h4 class="text-2xl font-bold mb-4">RESPETO</h4>
+                    <p class="text-sm leading-relaxed">
+                        Hacia el usuario y sus familiares, compañeros de trabajo, recursos de la institución, el ambiente y todo aquello con que interactuemos en el ejercicio de nuestra Misión.
+                    </p>
                 </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-navy rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-handshake text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-navy">Compromiso</h3>
-                </div>
-                <div class="text-center">
-                    <div class="w-20 h-20 bg-teal-dark rounded-full flex items-center justify-center mx-auto mb-4">
-                        <i class="fas fa-users text-white text-2xl"></i>
-                    </div>
-                    <h3 class="font-semibold text-navy">Trabajo en Equipo</h3>
+
+                <!-- Confidencialidad -->
+                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center">
+                    <h4 class="text-2xl font-bold mb-4">CONFIDENCIALIDAD</h4>
+                    <p class="text-sm leading-relaxed">
+                        Es un deber ético brindar confidencialidad en la práctica profesional
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- History Section -->
+    <!-- News Section -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
-                NUESTRA HISTORIA
+            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-teal">
+                NOTICIAS
             </h2>
+            
             <div class="max-w-4xl mx-auto">
-                <div class="bg-gradient-to-r from-teal to-teal-dark rounded-3xl p-8 text-white">
-                    <p class="leading-relaxed mb-4">
-                        La Clínica Capurri S.A nació en 1995 con el propósito de brindar servicios de salud de alta 
-                        calidad a la región del Urabá Antioqueño. Desde nuestros inicios, hemos trabajado 
-                        incansablemente para convertirnos en un referente de excelencia médica en la zona.
-                    </p>
-                    <p class="leading-relaxed mb-4">
-                        A lo largo de estos años, hemos ampliado nuestras instalaciones, incorporado tecnología de 
-                        vanguardia y formado un equipo de profesionales altamente calificados, siempre manteniendo 
-                        nuestro compromiso con la humanización del servicio y el bienestar integral de nuestros pacientes.
-                    </p>
-                    <p class="leading-relaxed">
-                        Hoy, más de 25 años después, continuamos evolucionando para responder a las necesidades de 
-                        salud de nuestra comunidad, con la misma pasión y dedicación del primer día.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
-                NUESTRO EQUIPO DIRECTIVO
-            </h2>
-            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-                <div class="text-center">
-                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
-                    <h3 class="font-bold text-lg text-navy">Dr. Juan Pérez</h3>
-                    <p class="text-gray-600">Director General</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
-                    <h3 class="font-bold text-lg text-navy">Dra. María García</h3>
-                    <p class="text-gray-600">Directora Médica</p>
-                </div>
-                <div class="text-center">
-                    <div class="w-32 h-32 bg-gray-300 rounded-full mx-auto mb-4"></div>
-                    <h3 class="font-bold text-lg text-navy">Lic. Carlos López</h3>
-                    <p class="text-gray-600">Director Administrativo</p>
+                <div class="bg-gray-200 rounded-3xl overflow-hidden shadow-lg">
+                    <div class="h-64 bg-gray-300"></div>
+                    <div class="bg-navy p-6">
+                        <h3 class="text-2xl font-bold text-white">Título de la noticia</h3>
+                    </div>
                 </div>
             </div>
         </div>

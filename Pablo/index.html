@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica Capurri S.A - Tu salud es nuestra prioridad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -16,6 +19,9 @@
                         'navy': '#2C5F7C',
                         'green-card': '#7FBF3F',
                         'yellow-card': '#F5B842',
+                    },
+                    fontFamily: {
+                        'sans': ['Source Sans Pro', 'sans-serif'],
                     }
                 }
             }
@@ -30,14 +36,14 @@
                 <div class="flex items-center">
                     <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="text-gray-700 hover:text-teal transition">Inicio</a>
-                    <a href="quienes-somos.html" class="text-gray-700 hover:text-teal transition">Quiénes somos</a>
-                    <a href="servicios.html" class="text-gray-700 hover:text-teal transition">Servicios</a>
-                    <a href="noticias.html" class="text-gray-700 hover:text-teal transition">Noticias</a>
-                    <a href="contactanos.html" class="text-gray-700 hover:text-teal transition">Contáctanos</a>
+                    <a href="index.html" class="text-green-600 font-semibold">Inicio</a>
+                    <a href="quienes-somos.html" class="text-green-600 hover:text-green-700 transition">Quiénes somos</a>
+                    <a href="servicios.html" class="text-green-600 hover:text-green-700 transition">Servicios</a>
+                    <a href="noticias.html" class="text-green-600 hover:text-green-700 transition">Noticias</a>
+                    <a href="contactanos.html" class="text-green-600 hover:text-green-700 transition">Contáctanos</a>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-gray-700">
+                    <button class="text-white">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -46,58 +52,61 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-teal to-teal-dark relative overflow-hidden">
-        <div class="container mx-auto px-4 py-16 lg:py-24">
-            <div class="grid lg:grid-cols-2 gap-8 items-center">
-                <div class="text-white z-10">
-                    <h1 class="text-4xl lg:text-5xl font-bold mb-2">
-                        Tu salud es<br>
-                        <span class="text-6xl lg:text-7xl">NUESTRA</span>
-                        <span class="text-6xl lg:text-7xl opacity-50"> PRIORIDAD</span>
-                    </h1>
-                    <p class="mt-6 text-lg leading-relaxed mb-8">
-                        CLÍNICA CAPURRI S.A tiene como objetivo contribuir a la<br>
-                        transformación social en el sector salud en la región del<br>
-                        Urabá Antioqueño y Chocóano. Busca liderar los pilares con<br>
-                        nuestras instituciones aliadas para garantizar un modelo<br>
-                        que responda a las necesidades de nuestros usuarios,<br>
-                        contribuyendo en la atención a los pacientes que visitan la<br>
-                        región.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <button class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">
-                            Quiénes Somos
-                        </button>
-                        <button class="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-teal transition">
-                            Servicios
-                        </button>
+    <section class="bg-gradient-to-br from-teal to-teal-dark relative min-h-[600px] lg:min-h-[500px]">
+        <div class="container mx-auto px-4 py-12 lg:py-16 h-full">
+            <div class="grid lg:grid-cols-2 gap-8 items-center h-full">
+                <!-- Doctor Image - Left Side -->
+                <div class="relative lg:order-1 order-2 flex justify-center lg:justify-start">
+                    <div class="relative max-w-sm lg:max-w-md xl:max-w-lg">
+                        <img src="recursos/homeDoctor.png" alt="Profesional de salud" class="relative z-10 w-full h-auto object-contain">
                     </div>
                 </div>
-                <div class="relative">
-                    <img src="source/healthcare-professional.png" alt="Profesional de salud" class="w-full max-w-md mx-auto lg:max-w-full">
-                    <div class="absolute top-0 left-0 w-32 h-32 bg-yellow-400 rounded-full -z-10 -translate-x-8 -translate-y-8"></div>
+                <!-- Text Content - Right Side -->
+                <div class="text-white z-20 lg:order-2 order-1 lg:pr-8">
+                    <h1 class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 leading-tight">
+                        Tu salud es<br>
+                        <span class="text-4xl lg:text-5xl xl:text-6xl">NUESTRA</span>
+                        <span class="text-4xl lg:text-5xl xl:text-6xl text-white/60"> PRIORIDAD</span>
+                    </h1>
+                    <p class="mt-6 text-sm lg:text-base leading-relaxed mb-8 max-w-lg">
+                        CLÍNICA CHINITA S.A tiene como objetivo contribuir a la transformación social en el sector salud en la región del Urabá Antioqueño y Chocóano. Busca liderar los pilares con nuestras instituciones aliadas para garantizar un modelo que responda a las necesidades de nuestros usuarios, contribuyendo en la atención a los pacientes que visitan la región.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="quienes-somos.html" class="bg-yellow-500 text-gray-900 px-6 lg:px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition text-sm lg:text-base text-center">
+                            Quiénes Somos
+                        </a>
+                        <a href="servicios.html" class="border-2 border-white text-white px-6 lg:px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-teal transition text-sm lg:text-base text-center">
+                            Servicios
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="absolute bottom-0 left-0 right-0">
+        <div class="absolute bottom-0 left-0 right-0 z-10 bg-gradient-to-br from-teal to-teal-dark relative">
             <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 120L1440 120L1440 40C1440 40 1080 0 720 0C360 0 0 40 0 40L0 120Z" fill="white"/>
+                <path d="M0 0L1440 0L1440 80C1440 80 1080 120 720 120C360 120 0 80 0 80L0 0Z" />
             </svg>
         </div>
     </section>
 
     <!-- Welcome Section -->
-    <section class="py-16 bg-white relative">
+    <section class="relative -mt-52 mb-16">
         <div class="container mx-auto px-4">
-            <div class="bg-navy rounded-3xl p-8 lg:p-12 text-white max-w-4xl mx-auto">
-                <h2 class="text-2xl lg:text-3xl mb-4">
-                    Nuestro equipo y personal<br>
-                    te dan la <span class="text-4xl lg:text-5xl font-bold">BIENVENIDA</span> a<br>
-                    nuestras instalaciones
-                </h2>
-                <button class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-full font-semibold hover:bg-yellow-400 transition mt-6">
-                    Saludo de nuestro Director
-                </button>
+            <div class="bg-navy rounded-3xl p-8 lg:p-12 text-white max-w-5xl mx-auto relative z-20 shadow-xl">
+                <div class="flex flex-col lg:flex-row justify-between items-start lg:items-center min-h-[200px]">
+                    <div class="flex-1 lg:pr-8">
+                        <h2 class="text-2xl lg:text-4xl xl:text-5xl leading-tight mb-4 lg:mb-0">
+                            Nuestro equipo y personal<br>
+                            te dan la <span class="text-4xl lg:text-6xl xl:text-7xl font-bold">BIENVENIDA</span> a<br>
+                            nuestras instalaciones
+                        </h2>
+                    </div>
+                    <div class="self-end lg:self-end mt-6 lg:mt-0">
+                        <button class="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition text-sm lg:text-base">
+                            Saludo de nuestro Director
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -162,7 +171,7 @@
                 <!-- Map -->
                 <div class="rounded-3xl overflow-hidden shadow-lg">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8!2d-76.6!3d7.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDgnMDAuMCJOIDc2wrAzNicwMC4wIlc!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15853.152842688896!2d-76.6441154!3d7.8808738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zQ2FycmVyYSA5OCAjIDEwMi0xMSwgMDU3ODQwIENvbG9tYmlh!5e0!3m2!1sen!2s!4v1640995200000!5m2!1sen!2s&q=carrera+98+102+11+057840+colombia"
                         width="100%"
                         height="400"
                         style="border:0;"
@@ -199,26 +208,30 @@
 
             <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
                 <!-- Legal Info Card -->
-                <div class="bg-teal rounded-3xl p-8 text-white">
-                    <h4 class="text-2xl font-bold mb-6 italic">Correo jurídico</h4>
-                    <div class="space-y-3">
-                        <p><a href="mailto:clinicaclinitaramaeil.com" class="underline hover:no-underline">clinicaclinitaramaeil.com</a></p>
-                        <p><a href="mailto:testeos@clinicacharter.com" class="underline hover:no-underline">testeos@clinicacharter.com</a></p>
+                <div class="bg-teal rounded-3xl p-6 lg:p-10 text-white h-full flex flex-col justify-between">
+                    <div class="mb-8">
+                        <h4 class="text-3xl lg:text-4xl font-bold mb-6 italic">Correo jurídico</h4>
+                        <div class="space-y-4 ml-16">
+                            <p class="text-lg lg:text-xl"><a href="mailto:clinicaclinitaramaeil.com" class="underline hover:no-underline">clinicaclinitaramaeil.com</a></p>
+                            <p class="text-lg lg:text-xl"><a href="mailto:testeos@clinicacharter.com" class="underline hover:no-underline">testeos@clinicacharter.com</a></p>
+                        </div>
                     </div>
                     
-                    <h4 class="text-2xl font-bold mt-8 mb-6 italic">Compromiso social</h4>
-                    <div class="space-y-3">
-                        <p>Política de mitos (PDF)</p>
-                        <p>Política de calidad (PDF)</p>
-                        <p>Política de seguridad al paciente (PDF)</p>
-                        <p>Compromiso Ambiental (PDF)</p>
-                        <p>Política de SST (PDF)</p>
+                    <div>
+                        <h4 class="text-3xl lg:text-4xl font-bold mb-6 italic">Compromiso social</h4>
+                        <div class="space-y-4 ml-16">
+                            <p class="text-lg lg:text-xl">Política de mitos (PDF)</p>
+                            <p class="text-lg lg:text-xl">Política de calidad (PDF)</p>
+                            <p class="text-lg lg:text-xl">Política de seguridad al paciente (PDF)</p>
+                            <p class="text-lg lg:text-xl">Compromiso Ambiental (PDF)</p>
+                            <p class="text-lg lg:text-xl">Política de SST (PDF)</p>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Image -->
                 <div class="rounded-3xl overflow-hidden shadow-lg">
-                    <img src="source/medical-team.jpg" alt="Equipo médico" class="w-full h-full object-cover">
+                    <img src="recursos/equipoMedico.png" alt="Equipo médico" class="w-full h-full object-cover">
                 </div>
             </div>
         </div>
