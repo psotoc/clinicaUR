@@ -46,8 +46,9 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-teal to-teal-dark py-20">
-        <div class="container mx-auto px-4">
+    <section class="relative py-20 bg-cover bg-center bg-no-repeat" style="background-image: url('recursos/contactTitle.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-4 relative z-10">
             <h1 class="text-4xl lg:text-6xl font-bold text-white text-center">
                 CONTÁCTANOS
             </h1>
@@ -66,16 +67,29 @@
                 <div class="bg-gray-50 rounded-3xl p-8 shadow-lg">
                     <h2 class="text-3xl font-bold text-navy mb-6">Envíanos un mensaje</h2>
                     <form id="contactForm" class="space-y-6">
-                        <div>
-                            <label class="block text-gray-700 font-semibold mb-2">
-                                Nombre completo *
-                            </label>
-                            <input 
-                                type="text" 
-                                required
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal"
-                                placeholder="Tu nombre completo"
-                            >
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">
+                                    Nombre completo *
+                                </label>
+                                <input 
+                                    type="text" 
+                                    required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal"
+                                    placeholder="Tu nombre completo"
+                                >
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-semibold mb-2">
+                                    Cédula *
+                                </label>
+                                <input 
+                                    type="text" 
+                                    required
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-teal"
+                                    placeholder="Tu número de cédula"
+                                >
+                            </div>
                         </div>
                         
                         <div class="grid md:grid-cols-2 gap-4">
@@ -162,7 +176,7 @@
                                 <div>
                                     <h3 class="font-bold text-lg text-navy mb-2">Dirección</h3>
                                     <p class="text-gray-600">
-                                        Carrera 98 # 102 - 11/13/15<br>
+                                        Carrera 98 # 102<br>
                                         Apartadó, Antioquia<br>
                                         Código Postal: 057840
                                     </p>
@@ -178,9 +192,8 @@
                                 <div>
                                     <h3 class="font-bold text-lg text-navy mb-2">Teléfonos</h3>
                                     <p class="text-gray-600">
-                                        Línea principal: (604) 828 0000<br>
-                                        Urgencias: (604) 828 0001<br>
-                                        WhatsApp: 300 123 4567
+                                        <strong>Conmutador PBX:</strong> +57 (604) 815 6060<br>
+                                        <strong>Canal de citas:</strong> 815 6060 opc 1 – 1
                                     </p>
                                 </div>
                             </div>
@@ -194,9 +207,14 @@
                                 <div>
                                     <h3 class="font-bold text-lg text-navy mb-2">Correo electrónico</h3>
                                     <p class="text-gray-600">
-                                        info@clinicacapurri.com<br>
-                                        citas@clinicacapurri.com<br>
-                                        juridico@clinicacapurri.com
+                                        <strong>Correo Institucional:</strong><br>
+                                        contactenos@clinicachinita.com<br><br>
+                                        <strong>Correo notificaciones judiciales:</strong><br>
+                                        clinicachinita@gmail.com<br><br>
+                                        <strong>Correo Tutelas:</strong><br>
+                                        tutelas@clinicachinita.com<br><br>
+                                        <strong>Solicitud Citas Especializadas:</strong><br>
+                                        servicioselectivos@clinicachinita.com
                                     </p>
                                 </div>
                             </div>
@@ -230,11 +248,49 @@
                             <a href="#" class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white hover:bg-pink-700 transition">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="w-12 h-12 bg-blue-400 rounded-full flex items-center justify-center text-white hover:bg-blue-500 transition">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#" class="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center text-white hover:bg-green-600 transition">
-                                <i class="fab fa-whatsapp"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work With Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-teal text-center mb-12">TRABAJA CON NOSOTROS</h2>
+                <div class="bg-yellow-card rounded-3xl p-8 shadow-xl">
+                    <div class="relative grid lg:grid-cols-2 items-center gap-8">
+                        <!-- Image Side -->
+                        <div class="relative h-full">
+                            <img src="recursos/workwithus.png" alt="Trabaja con nosotros" class="w-full h-full object-cover rounded-2xl">
+                        </div>
+                        
+                        <!-- Content Side -->
+                        <div class="bg-white rounded-3xl p-8 lg:p-10 shadow-lg -my-4 lg:-my-8 lg:-mr-12 lg:-ml-20 relative z-10">
+                            <p class="text-gray-700 mb-4">
+                                Con la finalidad de <strong>cumplir con nuestro</strong> objeto misional Clínica Chinita S.A. requiere de personal idóneo altamente comprometido y con el cual podamos construir <strong>juntos un futuro sostenible de salud y bienestar para las personas.</strong>
+                            </p>
+                            
+                            <h3 class="text-xl font-bold text-navy mb-4">Profesionales requeridos:</h3>
+                            <ul class="space-y-2 mb-6 text-gray-700">
+                                <li>• Médicos especialistas</li>
+                                <li>• Médicos generales</li>
+                                <li>• Profesionales y auxiliares de enfermería</li>
+                                <li>• Bacteriólogos</li>
+                                <li>• Químico farmacéutico</li>
+                                <li>• Auxiliares de servicio farmacéutico</li>
+                                <li>• Instrumentador quirúrgico</li>
+                                <li>• Auxiliares administrativos</li>
+                                <li>• Auxiliares contables</li>
+                                <li>• Auxiliares de facturación</li>
+                                <li>• Auxiliares de cuenta médicas</li>
+                                <li>• Auxiliares de servicios generales</li>
+                            </ul>
+                            
+                            <a href="#" class="inline-block bg-yellow-card hover:bg-yellow-500 text-white font-bold py-3 px-8 rounded-full transition">
+                                Deja tu Hoja de Vida
                             </a>
                         </div>
                     </div>
@@ -249,7 +305,7 @@
             <h2 class="text-3xl font-bold text-navy text-center mb-8">Encuéntranos</h2>
             <div class="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-xl">
                 <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8!2d-76.6!3d7.8!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNDgnMDAuMCJOIDc2wrAzNicwMC4wIlc!5e0!3m2!1sen!2s!4v1600000000000!5m2!1sen!2s"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.8!2d-76.6274!3d7.8085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s'Carrera%2098%20%23%20102%2C%20Apartad%C3%B3%2C%20Antioquia%2C%20057840'!5e0!3m2!1sen!2sco!4v1600000000000!5m2!1sen!2sco"
                     width="100%"
                     height="500"
                     style="border:0;"
