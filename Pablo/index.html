@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clínica Capurri S.A - Tu salud es nuestra prioridad</title>
+    <title>Clínica Chinita S.A - Tu salud es nuestra prioridad</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -34,7 +34,7 @@
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between py-4">
                 <div class="flex items-center">
-                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Chinita S.A" class="h-12"></a>                </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="text-green-600 font-semibold">Inicio</a>
                     <a href="quienes-somos.html" class="text-green-600 hover:text-green-700 transition">Quiénes somos</a>
@@ -43,7 +43,7 @@
                     <a href="contactanos.html" class="text-green-600 hover:text-green-700 transition">Contáctanos</a>
                 </div>
                 <div class="md:hidden">
-                    <button class="text-white">
+                    <button class="text-green-600">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
@@ -121,34 +121,40 @@
                 VISITANTES
             </h3>
             
-            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                <!-- Parqueadero Card -->
-                <div class="bg-teal rounded-3xl p-8 text-white shadow-lg">
-                    <h4 class="text-2xl font-bold mb-4 italic">PARQUEADERO</h4>
-                    <p class="leading-relaxed">
-                        Contamos con una zona debidamente delimitada para el estacionamiento de
-                        ambulancias y vehículos que lo requieran como paciente, el cual solo podrá ser usado
-                        mientras ingresas y egresas de nuestras instalaciones.
-                    </p>
+            <div class="flex flex-col gap-8">
+                <!-- Parqueadero Card - Left aligned -->
+                <div class="flex justify-start">
+                    <div class="bg-teal rounded-3xl p-8 text-white shadow-lg w-full md:w-3/4 lg:w-2/3 min-h-[200px] flex flex-col">
+                        <h4 class="text-2xl font-bold mb-4 italic">PARQUEADERO</h4>
+                        <p class="leading-relaxed flex-grow">
+                            Contamos con una zona debidamente delimitada para el estacionamiento de
+                            ambulancias y vehículos que lo requieran como paciente, el cual solo podrá ser usado
+                            mientras ingresas y egresas de nuestras instalaciones.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Urgencias Card -->
-                <div class="bg-green-card rounded-3xl p-8 text-white shadow-lg">
-                    <h4 class="text-2xl font-bold mb-4 italic">URGENCIAS</h4>
-                    <p class="leading-relaxed">
-                        El ingreso en el servicio de urgencias es las 24 horas todos los días.
-                        En la sala de urgencias solo pueden estar con acompañante las menores de edad,
-                        personas adultas mayores de 65 años y personas en condición de discapacidad; los
-                        demás acompañantes deben esperar afuera de las instalaciones.
-                    </p>
+                <!-- Urgencias Card - Right aligned -->
+                <div class="flex justify-end">
+                    <div class="bg-green-card rounded-3xl p-8 text-white shadow-lg w-full md:w-3/4 lg:w-2/3 min-h-[200px] flex flex-col">
+                        <h4 class="text-2xl font-bold mb-4 italic">URGENCIAS</h4>
+                        <p class="leading-relaxed flex-grow">
+                            El ingreso en el servicio de urgencias es las 24 horas todos los días.
+                            En la sala de urgencias solo pueden estar con acompañante las menores de edad,
+                            personas adultas mayores de 65 años y personas en condición de discapacidad; los
+                            demás acompañantes deben esperar afuera de las instalaciones.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Hospitalización Card -->
-                <div class="bg-yellow-card rounded-3xl p-8 text-gray-900 shadow-lg">
-                    <h4 class="text-2xl font-bold mb-4 italic">HOSPITALIZACIÓN</h4>
-                    <p class="leading-relaxed">
-                        Las visitas de los familiares o amigos serán todos los días de: 10:30 a.m. a 12:30 a.m.
-                    </p>
+                <!-- Hospitalización Card - Left aligned -->
+                <div class="flex justify-start">
+                    <div class="bg-yellow-card rounded-3xl p-8 text-gray-900 shadow-lg w-full md:w-3/4 lg:w-2/3 min-h-[200px] flex flex-col">
+                        <h4 class="text-2xl font-bold mb-4 italic">HOSPITALIZACIÓN</h4>
+                        <p class="leading-relaxed flex-grow">
+                            Las visitas de los familiares o amigos serán todos los días de: 10:30 a.m. a 12:30 a.m.
+                        </p>
+                    </div>
                 </div>
             </div>
 
@@ -212,8 +218,8 @@
                     <div class="mb-8">
                         <h4 class="text-3xl lg:text-4xl font-bold mb-6 italic">Correo jurídico</h4>
                         <div class="space-y-4 ml-16">
-                            <p class="text-lg lg:text-xl"><a href="mailto:clinicaclinitaramaeil.com" class="underline hover:no-underline">clinicaclinitaramaeil.com</a></p>
-                            <p class="text-lg lg:text-xl"><a href="mailto:testeos@clinicacharter.com" class="underline hover:no-underline">testeos@clinicacharter.com</a></p>
+                            <p class="text-lg lg:text-xl"><a href="mailto:clinicaclinitaramaeil.com" class="underline hover:no-underline">clinicachinita@gmail.com</a></p>
+                            <p class="text-lg lg:text-xl"><a href="mailto:testeos@clinicacharter.com" class="underline hover:no-underline">tutelas@clinicachinita.com</a></p>
                         </div>
                     </div>
                     
