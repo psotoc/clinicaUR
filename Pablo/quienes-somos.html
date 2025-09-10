@@ -55,11 +55,6 @@
     <!-- Hero Section -->
     <section class="relative py-24 lg:py-28 bg-cover bg-center bg-no-repeat min-h-[400px] lg:min-h-[450px]" style="background-image: url('recursos/quienesBanner.png');">
         <div class="absolute inset-0 bg-teal bg-opacity-60"></div>
-        <div class="container mx-auto px-4 text-center relative z-10 flex items-center justify-center h-full">
-            <h1 class="text-4xl lg:text-6xl font-bold text-white mb-4">
-                QUIÉNES SOMOS
-            </h1>
-        </div>
     </section>
 
     <!-- Mission & Vision Section -->
@@ -97,35 +92,49 @@
                 <span class="text-teal">NUESTROS</span> <span class="text-navy">OBJETIVOS</span>
             </h2>
             
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-                <!-- Objetivo 1 -->
-                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
-                    <h4 class="text-xl font-bold mb-4">PRODUCIR</h4>
-                    <p class="text-sm leading-relaxed">
-                        Garantizar, mediante un manejo gerencial apropiado, la rentabilidad social y financiera de la empresa.
-                    </p>
+            <div class="max-w-5xl mx-auto">
+                <!-- First row - 3 rectangles -->
+                <div class="grid md:grid-cols-3 gap-4 mb-4 justify-center">
+                    <!-- Objetivo 1 - PRODUCIR with image -->
+                    <div class="bg-teal rounded-3xl overflow-hidden relative min-h-[400px] max-w-[280px] mx-auto w-full">
+                        <img src="recursos/producir.png" alt="Producir" class="absolute inset-0 w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-teal/60 flex items-center justify-center">
+                            <h4 class="text-2xl font-bold text-white">PRODUCIR</h4>
+                        </div>
+                    </div>
+
+                    <!-- Objetivo 2 -->
+                    <div class="bg-teal rounded-3xl p-8 text-white text-center min-h-[400px] max-w-[280px] mx-auto w-full flex flex-col justify-center">
+                        <p class="text-lg leading-relaxed">
+                            Garantizar, mediante un manejo gerencial apropiado, la rentabilidad social y financiera de la empresa.
+                        </p>
+                    </div>
+
+                    <!-- Objetivo 3 -->
+                    <div class="bg-teal rounded-3xl p-8 text-white text-center min-h-[400px] max-w-[280px] mx-auto w-full flex flex-col justify-center">
+                        <p class="text-lg leading-relaxed">
+                            Satisfacer los requerimientos del entorno, adecuando continuamente los servicios y su funcionamiento.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Objetivo 2 -->
-                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
-                    <h4 class="text-xl font-bold mb-4"></h4>
-                    <p class="text-sm leading-relaxed">
-                        Satisfacer los requerimientos del entorno, adecuando continuamente los servicios y su funcionamiento.
-                    </p>
-                </div>
+                <!-- Second row - 2 rectangles centered -->
+                <div class="flex justify-center">
+                    <div class="grid md:grid-cols-2 gap-16">
+                        <!-- Objetivo 4 -->
+                        <div class="bg-teal rounded-3xl p-8 text-white text-center min-h-[400px] w-[280px] flex flex-col justify-center">
+                            <p class="text-lg leading-relaxed">
+                                Prestar servicios de salud que satisfagan de manera óptima las necesidades y expectativas de la población usuaria.
+                            </p>
+                        </div>
 
-                <!-- Objetivo 3 -->
-                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
-                    <p class="text-sm leading-relaxed">
-                        Prestar servicios de salud que satisfagan de manera óptima las necesidades y expectativas de la población usuaria.
-                    </p>
-                </div>
-
-                <!-- Objetivo 4 -->
-                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[280px] flex flex-col justify-center">
-                    <p class="text-sm leading-relaxed">
-                        Contribuir al desarrollo social, mejorando la calidad de vida y reduciendo la Morbimortalidad, en la población usuaria.
-                    </p>
+                        <!-- Objetivo 5 -->
+                        <div class="bg-teal rounded-3xl p-8 text-white text-center min-h-[400px] w-[280px] flex flex-col justify-center">
+                            <p class="text-lg leading-relaxed">
+                                Contribuir al desarrollo social, mejorando la calidad de vida y reduciendo la Morbimortalidad, en la población usuaria.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -145,71 +154,64 @@
     </section>
 
     <!-- Corporate Values Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
+    <section class="bg-gray-50">
+        <div class="container mx-auto px-4 pt-16">
             <h2 class="text-3xl lg:text-4xl font-bold text-center mb-2 text-teal">
                 NUESTROS VALORES
             </h2>
             <h3 class="text-3xl lg:text-4xl font-bold text-center mb-8 text-navy">
                 CORPORATIVOS
             </h3>
-            
-            <div class="max-w-4xl mx-auto mb-12">
-                <div class="bg-white border border-teal rounded-3xl p-8 text-center">
-                    <p class="text-gray-700 leading-relaxed text-lg">
-                        La familia Clínica Chinita S.A., está conformada por todo el personal que 
-                        interviene en la prestación del servicio de salud y se fundamenta en una 
-                        cultura organizacional de principios, que permitan el logro de los objetivos 
-                        estratégicos de la organización. De manera que es nuestro interés promover 
-                        todos los valores, pero en especial caracterizarnos por:
-                    </p>
-                </div>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
-                <!-- Responsabilidad -->
-                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center">
-                    <h4 class="text-2xl font-bold mb-4">RESPONSABILIDAD</h4>
-                    <p class="text-sm leading-relaxed">
-                        Con el ejercicio de nuestro trabajo y todas las actividades para garantizar la seguridad del paciente
-                    </p>
-                </div>
-
-                <!-- Respeto -->
-                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center">
-                    <h4 class="text-2xl font-bold mb-4">RESPETO</h4>
-                    <p class="text-sm leading-relaxed">
-                        Hacia el usuario y sus familiares, compañeros de trabajo, recursos de la institución, el ambiente y todo aquello con que interactuemos en el ejercicio de nuestra Misión.
-                    </p>
-                </div>
-
-                <!-- Confidencialidad -->
-                <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center">
-                    <h4 class="text-2xl font-bold mb-4">CONFIDENCIALIDAD</h4>
-                    <p class="text-sm leading-relaxed">
-                        Es un deber ético brindar confidencialidad en la práctica profesional
-                    </p>
-                </div>
-            </div>
         </div>
-    </section>
-
-    <!-- News Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-teal">
-                NOTICIAS
-            </h2>
+        
+        <div class="relative" style="background-image: url('recursos/valoresTitle.png'); background-size: cover; background-position: center; min-height: 400px; padding-bottom: 80px;">
+            <!-- Text overlay on the image -->
+            <div class="flex items-center justify-center px-4 pt-12">
+                <div class="max-w-3xl mx-auto">
+                    <div class="bg-white/95 border border-teal rounded-3xl p-8 text-center shadow-lg">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            La familia Clínica Chinita S.A., está conformada por todo el personal que 
+                            interviene en la prestación del servicio de salud y se fundamenta en una 
+                            cultura organizacional de principios, que permitan el logro de los objetivos 
+                            estratégicos de la organización. De manera que es nuestro interés promover 
+                            todos los valores, pero en especial caracterizarnos por:
+                        </p>
+                    </div>
+                </div>
+            </div>
             
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-gray-200 rounded-3xl overflow-hidden shadow-lg">
-                    <div class="h-64 bg-gray-300"></div>
-                    <div class="bg-navy p-6">
-                        <h3 class="text-2xl font-bold text-white">Título de la noticia</h3>
+            <!-- Blue rectangles overlapping the background -->
+            <div class="container mx-auto px-4 absolute bottom-0 left-0 right-0 transform translate-y-3/4">
+                <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                    <!-- Responsabilidad -->
+                    <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center shadow-lg">
+                        <h4 class="text-2xl font-bold mb-4">RESPONSABILIDAD</h4>
+                        <p class="text-sm leading-relaxed">
+                            Con el ejercicio de nuestro trabajo y todas las actividades para garantizar la seguridad del paciente
+                        </p>
+                    </div>
+
+                    <!-- Respeto -->
+                    <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center shadow-lg">
+                        <h4 class="text-2xl font-bold mb-4">RESPETO</h4>
+                        <p class="text-sm leading-relaxed">
+                            Hacia el usuario y sus familiares, compañeros de trabajo, recursos de la institución, el ambiente y todo aquello con que interactuemos en el ejercicio de nuestra Misión.
+                        </p>
+                    </div>
+
+                    <!-- Confidencialidad -->
+                    <div class="bg-teal rounded-3xl p-6 text-white text-center min-h-[300px] flex flex-col justify-center shadow-lg">
+                        <h4 class="text-2xl font-bold mb-4">CONFIDENCIALIDAD</h4>
+                        <p class="text-sm leading-relaxed">
+                            Es un deber ético brindar confidencialidad en la práctica profesional
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <!-- Add padding to account for overlapping boxes -->
+        <div class="pb-64"></div>
     </section>
 
     <!-- Footer -->
