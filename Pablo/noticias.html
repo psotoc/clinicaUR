@@ -61,30 +61,23 @@
     <!-- Featured News -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto" id="featured-news">
+                <!-- Loading state -->
+                <div class="text-center py-12">
+                    <i class="fas fa-spinner fa-spin text-4xl text-teal"></i>
+                    <p class="text-gray-600 mt-4">Cargando noticias...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All News Grid -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
             <div class="max-w-6xl mx-auto">
-                <!-- Featured Article -->
-                <div class="bg-gray-50 rounded-3xl overflow-hidden shadow-lg mb-12">
-                    <div class="grid md:grid-cols-2">
-                        <div class="h-64 md:h-auto bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
-                            <i class="fas fa-newspaper text-white text-6xl"></i>
-                        </div>
-                        <div class="p-8">
-                            <h2 class="text-3xl font-bold text-navy mb-4">
-                                Nueva Unidad de Cuidados Intensivos
-                            </h2>
-                            <p class="text-gray-600 mb-4">
-                                Nos complace anunciar la apertura de nuestra nueva Unidad de Cuidados Intensivos, 
-                                equipada con tecnología de última generación para brindar la mejor atención a 
-                                pacientes en estado crítico.
-                            </p>
-                            <div class="flex items-center justify-between">
-                                <span class="text-gray-500 text-sm">15 de Diciembre, 2024</span>
-                                <a href="noticia-detalle.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
-                                    Leer más <i class="fas fa-arrow-right ml-2"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="text-3xl font-bold text-navy mb-8">Todas las Noticias</h2>
+                <div id="all-news" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- News will be loaded here -->
                 </div>
             </div>
         </div>
@@ -94,7 +87,7 @@
     <!-- Footer -->
     <footer class="bg-navy py-8">
         <div class="container mx-auto px-4">
-            <div class="flex justify-center space-x-6">
+            <div class="flex justify-center space-x-6 mb-4">
                 <a href="#" class="text-white hover:text-teal transition">
                     <i class="fab fa-instagram text-2xl"></i>
                 </a>
@@ -102,7 +95,136 @@
                     <i class="fab fa-facebook text-2xl"></i>
                 </a>
             </div>
+            <div class="text-center">
+                <a href="admin-login.html" class="text-white/50 hover:text-white text-xs transition">
+                    <i class="fas fa-lock mr-1"></i>Admin
+                </a>
+            </div>
         </div>
     </footer>
+
+    <!-- Supabase JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="supabase-config.js"></script>
+    <script>
+        // Load news on page load
+        document.addEventListener('DOMContentLoaded', loadNews);
+
+        async function loadNews() {
+            try {
+                // Fetch all news, ordered by date
+                const { data: allNews, error } = await supabase
+                    .from('news')
+                    .select('*')
+                    .order('created_at', { ascending: false });
+
+                if (error) throw error;
+
+                // Display featured news (first featured article or latest)
+                const featuredNews = allNews.find(news => news.featured) || allNews[0];
+                if (featuredNews) {
+                    displayFeaturedNews(featuredNews);
+                }
+
+                // Display all other news
+                const otherNews = allNews.filter(news => news.id !== featuredNews?.id);
+                displayAllNews(otherNews);
+
+            } catch (error) {
+                console.error('Error loading news:', error);
+                document.getElementById('featured-news').innerHTML = `
+                    <div class="text-center py-12">
+                        <i class="fas fa-exclamation-circle text-4xl text-red-500"></i>
+                        <p class="text-gray-600 mt-4">Error al cargar las noticias</p>
+                    </div>
+                `;
+            }
+        }
+
+        function displayFeaturedNews(news) {
+            const featuredDiv = document.getElementById('featured-news');
+            const formattedDate = new Date(news.created_at).toLocaleDateString('es-ES', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+
+            featuredDiv.innerHTML = `
+                <div class="bg-gray-50 rounded-3xl overflow-hidden shadow-lg mb-12">
+                    <div class="grid md:grid-cols-2">
+                        ${news.image_url ? `
+                            <div class="h-64 md:h-auto bg-cover bg-center" style="background-image: url('${news.image_url}');"></div>
+                        ` : `
+                            <div class="h-64 md:h-auto bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
+                                <i class="fas fa-newspaper text-white text-6xl"></i>
+                            </div>
+                        `}
+                        <div class="p-8">
+                            <h2 class="text-3xl font-bold text-navy mb-4">
+                                ${news.title}
+                            </h2>
+                            <p class="text-gray-600 mb-4">
+                                ${news.summary}
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-500 text-sm">${formattedDate}</span>
+                                <a href="noticia-detalle.html?id=${news.id}" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                                    Leer más <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function displayAllNews(newsList) {
+            const allNewsDiv = document.getElementById('all-news');
+
+            if (newsList.length === 0) {
+                allNewsDiv.innerHTML = `
+                    <div class="col-span-full text-center py-12">
+                        <i class="fas fa-newspaper text-4xl text-gray-300"></i>
+                        <p class="text-gray-500 mt-4">No hay más noticias disponibles</p>
+                    </div>
+                `;
+                return;
+            }
+
+            allNewsDiv.innerHTML = newsList.map(news => {
+                const formattedDate = new Date(news.created_at).toLocaleDateString('es-ES', {
+                    day: 'numeric',
+                    month: 'long',
+                    year: 'numeric'
+                });
+
+                return `
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                        ${news.image_url ? `
+                            <div class="h-48 bg-cover bg-center" style="background-image: url('${news.image_url}');"></div>
+                        ` : `
+                            <div class="h-48 bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
+                                <i class="fas fa-newspaper text-white text-4xl"></i>
+                            </div>
+                        `}
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-navy mb-2">
+                                ${news.title}
+                            </h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                ${news.summary.substring(0, 100)}${news.summary.length > 100 ? '...' : ''}
+                            </p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-gray-500 text-xs">${formattedDate}</span>
+                                <a href="noticia-detalle.html?id=${news.id}" class="text-teal hover:text-teal-dark font-semibold text-sm">
+                                    Leer más <i class="fas fa-arrow-right ml-1"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+    </script>
 </body>
 </html>
