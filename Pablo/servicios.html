@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Clínica Capurri S.A</title>
+    <title>Servicios - Clínica Chinita</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script>
@@ -28,7 +28,7 @@
         <div class="container mx-auto px-4">
             <nav class="flex items-center justify-between py-4">
                 <div class="flex items-center">
-                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Capurri S.A" class="h-12"></a>                </div>
+                    <a href="index.html"><img src="recursos/logoHeader.png" alt="Clínica Chinita" class="h-12"></a>                </div>
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="text-green-600 hover:text-green-700 transition">Inicio</a>
                     <a href="quienes-somos.html" class="text-green-600 hover:text-green-700 transition">Quiénes somos</a>
@@ -61,18 +61,34 @@
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                
-                <!-- Urgencias 24/7 -->
+
+                <!-- Consulta Externa -->
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-                    <div class="h-48 bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center">
-                        <i class="fas fa-ambulance text-white text-6xl"></i>
+                    <div class="h-48 bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
+                        <i class="fas fa-user-md text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Urgencias 24/7</h3>
+                        <h3 class="text-2xl font-bold text-navy mb-3">Consulta Externa</h3>
                         <p class="text-gray-600 mb-4">
-                            Atención de emergencias las 24 horas del día, los 7 días de la semana con personal médico especializado.
+                            Atención médica general con profesionales calificados para el cuidado de tu salud y bienestar.
                         </p>
-                        <a href="servicio-urgencias.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <a href="servicio-consulta-externa.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                            Ver más <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Consulta Especializada -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
+                        <i class="fas fa-stethoscope text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-navy mb-3">Consulta Especializada</h3>
+                        <p class="text-gray-600 mb-4">
+                            Atención médica especializada en diversas áreas con especialistas altamente calificados.
+                        </p>
+                        <a href="servicio-consulta-especializada.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
@@ -80,8 +96,8 @@
 
                 <!-- Hospitalización -->
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-                    <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-                        <i class="fas fa-bed text-white text-6xl"></i>
+                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
+                        <i class="fas fa-bed-pulse text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-navy mb-3">Hospitalización</h3>
@@ -94,165 +110,54 @@
                     </div>
                 </div>
 
-                <!-- Cirugía -->
+                <!-- Ayudas Diagnósticas -->
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
                     <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
-                        <i class="fas fa-procedures text-white text-6xl"></i>
+                        <i class="fas fa-microscope text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Cirugía</h3>
+                        <h3 class="text-2xl font-bold text-navy mb-3">Ayudas Diagnósticas</h3>
                         <p class="text-gray-600 mb-4">
-                            Quirófanos equipados con tecnología de punta y equipo médico altamente calificado.
+                            Laboratorio clínico, imágenes diagnósticas y estudios especializados con resultados precisos.
                         </p>
-                        <a href="servicio-cirugia.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <a href="servicio-ayudas-diagnosticas.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Laboratorio Clínico -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-                    <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
-                        <i class="fas fa-vial text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Laboratorio Clínico</h3>
-                        <p class="text-gray-600 mb-4">
-                            Análisis clínicos con resultados rápidos y confiables utilizando equipos de última generación.
-                        </p>
-                        <a href="servicio-laboratorio.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
-                            Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Rayos X -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-                    <div class="h-48 bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center">
-                        <i class="fas fa-x-ray text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Rayos X</h3>
-                        <p class="text-gray-600 mb-4">
-                            Servicio de radiología digital para diagnósticos precisos y oportunos.
-                        </p>
-                        <a href="servicio-rayosx.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
-                            Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Consulta Externa -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-                    <div class="h-48 bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
-                        <i class="fas fa-stethoscope text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Consulta Externa</h3>
-                        <p class="text-gray-600 mb-4">
-                            Atención médica especializada en diversas áreas con profesionales calificados.
-                        </p>
-                        <a href="servicio-consulta.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
-                            Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Farmacia -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
-                    <div class="h-48 bg-gradient-to-br from-pink-500 to-pink-600 flex items-center justify-center">
-                        <i class="fas fa-pills text-white text-6xl"></i>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Farmacia</h3>
-                        <p class="text-gray-600 mb-4">
-                            Dispensación de medicamentos con asesoría farmacéutica profesional.
-                        </p>
-                        <a href="servicio-farmacia.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
-                            Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Vacunación -->
+                <!-- Gestión Petrafuncional -->
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
                     <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-                        <i class="fas fa-syringe text-white text-6xl"></i>
+                        <i class="fas fa-clipboard-check text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Vacunación</h3>
+                        <h3 class="text-2xl font-bold text-navy mb-3">Gestión Petrafuncional</h3>
                         <p class="text-gray-600 mb-4">
-                            Programa completo de vacunación para niños y adultos según esquema nacional.
+                            Evaluaciones y gestión integral de capacidades funcionales para el ámbito laboral.
                         </p>
-                        <a href="servicio-vacunacion.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <a href="servicio-gestion-petrafuncional.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
 
-                <!-- Odontología -->
+                <!-- Chequeos Ejecutivos -->
                 <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
                     <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
-                        <i class="fas fa-tooth text-white text-6xl"></i>
+                        <i class="fas fa-heartbeat text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Odontología</h3>
+                        <h3 class="text-2xl font-bold text-navy mb-3">Chequeos Ejecutivos</h3>
                         <p class="text-gray-600 mb-4">
-                            Servicios odontológicos integrales para mantener tu salud bucal en óptimas condiciones.
+                            Evaluaciones médicas completas y personalizadas para el cuidado preventivo de tu salud.
                         </p>
-                        <a href="servicio-odontologia.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <a href="servicio-chequeos-ejecutivos.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
                         </a>
                     </div>
                 </div>
 
-            </div>
-        </div>
-    </section>
-
-    <!-- Additional Services -->
-    <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl lg:text-4xl font-bold text-center mb-12 text-navy">
-                SERVICIOS ESPECIALIZADOS
-            </h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-navy mb-3">
-                        <i class="fas fa-baby text-teal mr-2"></i>
-                        Pediatría
-                    </h3>
-                    <p class="text-gray-600">
-                        Atención integral para el crecimiento y desarrollo saludable de tus hijos.
-                    </p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-navy mb-3">
-                        <i class="fas fa-female text-teal mr-2"></i>
-                        Ginecología y Obstetricia
-                    </h3>
-                    <p class="text-gray-600">
-                        Cuidado especializado de la salud femenina en todas las etapas de la vida.
-                    </p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-navy mb-3">
-                        <i class="fas fa-heartbeat text-teal mr-2"></i>
-                        Medicina Interna
-                    </h3>
-                    <p class="text-gray-600">
-                        Diagnóstico y tratamiento integral de enfermedades en adultos.
-                    </p>
-                </div>
-                <div class="bg-white rounded-2xl p-6 shadow-lg">
-                    <h3 class="text-xl font-bold text-navy mb-3">
-                        <i class="fas fa-user-md text-teal mr-2"></i>
-                        Medicina General
-                    </h3>
-                    <p class="text-gray-600">
-                        Atención primaria para toda la familia con enfoque preventivo.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
