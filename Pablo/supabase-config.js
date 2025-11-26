@@ -1,6 +1,23 @@
 // Supabase Configuration
-const SUPABASE_URL = 'https://jwbhcbeasopnnovqodmu.supabase.co';
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imp3YmhjYmVhc29wbm5vdnFvZG11Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjEyMjkyODksImV4cCI6MjA3NjgwNTI4OX0.KuXFagtqnpMmRHKAocsibM-VZ9UfkrOr7oBulB2Rxz0';
+// Load credentials from environment variables
 
-// Initialize Supabase client
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+let supabase;
+
+async function initSupabase() {
+    const env = await loadEnv();
+
+    const SUPABASE_URL = env.SUPABASE_URL;
+    const SUPABASE_ANON_KEY = env.SUPABASE_ANON_KEY;
+
+    if (!SUPABASE_URL || !SUPABASE_ANON_KEY) {
+        console.error('Supabase credentials not found in .env file');
+        return null;
+    }
+
+    // Initialize Supabase client
+    supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+    return supabase;
+}
+
+// Initialize on load
+window.initSupabase = initSupabase;

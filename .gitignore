@@ -1,0 +1,14 @@
+# Environment variables
+Pablo/.env
+
+# System files
+.DS_Store
+*/.DS_Store
+**/.DS_Store
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

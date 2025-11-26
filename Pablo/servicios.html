@@ -63,7 +63,7 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
 
                 <!-- Consulta Externa -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group cursor-pointer" onclick="openServiceModal('consultaExterna')">
                     <div class="h-48 bg-gradient-to-br from-teal to-teal-dark flex items-center justify-center">
                         <i class="fas fa-user-md text-white text-6xl"></i>
                     </div>
@@ -72,14 +72,14 @@
                         <p class="text-gray-600 mb-4">
                             Atención médica general con profesionales calificados para el cuidado de tu salud y bienestar.
                         </p>
-                        <a href="servicio-consulta-externa.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <span class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
                 <!-- Consulta Especializada -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group cursor-pointer" onclick="openServiceModal('consultaEspecializada')">
                     <div class="h-48 bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
                         <i class="fas fa-stethoscope text-white text-6xl"></i>
                     </div>
@@ -88,14 +88,14 @@
                         <p class="text-gray-600 mb-4">
                             Atención médica especializada en diversas áreas con especialistas altamente calificados.
                         </p>
-                        <a href="servicio-consulta-especializada.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <span class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
                 <!-- Hospitalización -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group cursor-pointer" onclick="openServiceModal('hospitalizacion')">
                     <div class="h-48 bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center">
                         <i class="fas fa-bed-pulse text-white text-6xl"></i>
                     </div>
@@ -104,14 +104,14 @@
                         <p class="text-gray-600 mb-4">
                             Habitaciones cómodas y equipadas con tecnología moderna para garantizar tu recuperación.
                         </p>
-                        <a href="servicio-hospitalizacion.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <span class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
                 <!-- Ayudas Diagnósticas -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group cursor-pointer" onclick="openServiceModal('ayudasDiagnosticas')">
                     <div class="h-48 bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center">
                         <i class="fas fa-microscope text-white text-6xl"></i>
                     </div>
@@ -120,30 +120,30 @@
                         <p class="text-gray-600 mb-4">
                             Laboratorio clínico, imágenes diagnósticas y estudios especializados con resultados precisos.
                         </p>
-                        <a href="servicio-ayudas-diagnosticas.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <span class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
-                <!-- Gestión Petrafuncional -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                <!-- Quirúrgicos -->
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group cursor-pointer" onclick="openServiceModal('quirurgicos')">
                     <div class="h-48 bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center">
-                        <i class="fas fa-clipboard-check text-white text-6xl"></i>
+                        <i class="fas fa-procedures text-white text-6xl"></i>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-2xl font-bold text-navy mb-3">Gestión Petrafuncional</h3>
+                        <h3 class="text-2xl font-bold text-navy mb-3">Quirúrgicos</h3>
                         <p class="text-gray-600 mb-4">
-                            Evaluaciones y gestión integral de capacidades funcionales para el ámbito laboral.
+                            Quirófanos completamente equipados con tecnología de punta para cirugías de mediana complejidad.
                         </p>
-                        <a href="servicio-gestion-petrafuncional.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <span class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
                 <!-- Chequeos Ejecutivos -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group">
+                <div class="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition group cursor-pointer" onclick="openServiceModal('chequeosEjecutivos')">
                     <div class="h-48 bg-gradient-to-br from-indigo-500 to-indigo-600 flex items-center justify-center">
                         <i class="fas fa-heartbeat text-white text-6xl"></i>
                     </div>
@@ -152,9 +152,9 @@
                         <p class="text-gray-600 mb-4">
                             Evaluaciones médicas completas y personalizadas para el cuidado preventivo de tu salud.
                         </p>
-                        <a href="servicio-chequeos-ejecutivos.html" class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
+                        <span class="inline-flex items-center text-teal hover:text-teal-dark font-semibold">
                             Ver más <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
+                        </span>
                     </div>
                 </div>
 
@@ -221,6 +221,19 @@
         </div>
     </section>
 
+    <!-- Service Modal -->
+    <div id="serviceModal" class="hidden fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4" onclick="closeServiceModal()">
+        <div class="relative max-w-4xl w-full max-h-[90vh] overflow-y-auto" onclick="event.stopPropagation()">
+            <!-- Close Button -->
+            <button onclick="closeServiceModal()" class="absolute -top-12 right-0 text-white hover:text-teal transition text-3xl z-10">
+                <i class="fas fa-times"></i>
+            </button>
+            <!-- Modal Content -->
+            <div id="modalContent" class="bg-gray-50 rounded-3xl shadow-2xl overflow-hidden border-b-8 border-green-600 p-8 md:p-12">
+            </div>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="bg-navy py-8">
         <div class="container mx-auto px-4">
@@ -234,5 +247,228 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const serviceContent = {
+            consultaExterna: {
+                title: 'Consulta Externa',
+                titleColor: 'text-green-600',
+                borderColor: 'border-green-600',
+                content: `
+                    <p class="text-gray-800 text-center leading-relaxed">
+                        En la Clínica Chinita, nos enorgullece ofrecer un servicio de Consulta Externa diseñado
+                        para brindarle atención médica eficiente y personalizada. Nuestro equipo de
+                        profesionales altamente calificados está comprometido con su salud y bienestar,
+                        ofreciendo una amplia gama de especialidades médicas para satisfacer sus necesidades
+                        individuales. Ya sea para evaluaciones rutinarias, diagnóstico de condiciones específicas o
+                        seguimiento de tratamientos, en la Clínica Chinita garantizamos un enfoque integral y
+                        humano. Asegúrese de que su salud esté en las mejores manos con nuestro servicio de
+                        Consulta Externa. Visítenos y experimente la diferencia en atención médica.
+                    </p>
+                `
+            },
+            consultaEspecializada: {
+                title: 'Consulta especializada',
+                titleColor: 'text-gray-900',
+                borderColor: 'border-green-600',
+                content: `
+                    <p class="text-gray-800 text-center leading-relaxed mb-8">
+                        En la Clínica Chinita, entendemos que cada paciente es único, por lo que ofrecemos
+                        servicios de Consulta Especializada para abordar condiciones de salud específicas con la
+                        experiencia y el cuidado que merecen. Nuestro equipo de especialistas está altamente
+                        capacitado en diversas áreas médicas para ofrecer diagnósticos precisos y tratamientos
+                        avanzados. Estamos dedicados a proporcionarle un enfoque personalizado, combinando
+                        la tecnología de punta con un trato humano y compasivo. Confíe en nosotros para
+                        ofrecerle un camino claro hacia la recuperación y el bienestar a través de nuestra
+                        Consulta Especializada. Su salud es nuestra máxima prioridad.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="bg-green-600 rounded-2xl p-6 text-white flex items-start gap-4">
+                            <div class="text-4xl flex-shrink-0">
+                                <i class="fas fa-syringe"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 italic">ANESTESIA</h4>
+                                <p class="text-sm leading-relaxed">
+                                    La anestesiología es la rama de la medicina dedicada al alivio del dolor y al total cuidado del paciente antes, durante y después de un acto quirúrgico. Existen varios tipos: local, regional y general.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-600 rounded-2xl p-6 text-white flex items-start gap-4">
+                            <div class="text-4xl flex-shrink-0">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 italic">PEDIATRIA</h4>
+                                <p class="text-sm leading-relaxed">
+                                    Pediatría es la rama de la medicina que se especializa en la salud y las enfermedades de los niños. Se trata de una especialidad médica que se centra en los pacientes desde el momento del nacimiento hasta la adolescencia, sin que exista un límite preciso que determine el final de su validez.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-600 rounded-2xl p-6 text-white flex items-start gap-4">
+                            <div class="text-4xl flex-shrink-0">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 italic">CARDIOLOGÍA</h4>
+                                <p class="text-sm leading-relaxed">
+                                    Se encarga del estudio, diagnóstico y tratamiento de las enfermedades del corazón y del aparato circulatorio. Es médica, pero no quirúrgica.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-600 rounded-2xl p-6 text-white flex items-start gap-4">
+                            <div class="text-4xl flex-shrink-0">
+                                <i class="fas fa-ear-listen"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 italic">OTORRINOLARINGOLOGIA</h4>
+                                <p class="text-sm leading-relaxed">
+                                    Es la especialidad médica que se encarga del estudio tanto médico como quirúrgico, de las enfermedades del oído, las vías respiratorias superiores y parte de las inferiores, incluyendo nariz, senos paranasales, faringe y laringe.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="bg-green-600 rounded-2xl p-6 text-white flex items-start gap-4">
+                            <div class="text-4xl flex-shrink-0">
+                                <i class="fas fa-user-doctor"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-xl mb-2 italic">MEDICINA INTERNA</h4>
+                                <p class="text-sm leading-relaxed">
+                                    La medicina interna es una especialidad médica que permite el diagnóstico y el tratamiento integral de los pacientes adultos, el servicio brinda un tratamiento a las enfermedades agudas o enfermedades crónicas que no requieren procedimientos quirúrgico
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                `
+            },
+            hospitalizacion: {
+                title: 'Hospitalización',
+                titleColor: 'text-gray-900',
+                borderColor: 'border-green-600',
+                content: `
+                    <p class="text-gray-800 text-center leading-relaxed">
+                        Contamos con 23 camas habilitadas distribuidas hospitalización adultos y pediátricos, el
+                        servicio dispone de un equipo profesional calificado para la atención de pacientes con
+                        patologías de mediana de complejidad, las camas hospitalarias están distribuidas en
+                        habitaciones bipersonales con servicios públicos para brindar una estancia tranquila que
+                        le propiciará una pronta y satisfactoria recuperación.
+                    </p>
+                `
+            },
+            ayudasDiagnosticas: {
+                title: 'Ayudas Diagnosticas',
+                titleColor: 'text-gray-900',
+                borderColor: 'border-green-600',
+                content: `
+                    <p class="text-gray-800 text-center leading-relaxed mb-8">
+                        Clínica Chinita SA, cuenta con una oferta de servicios diagnósticos con sólido respaldo
+                        científico y tecnológico para ofrecerle a nuestros usuarios y comunidad en general, con un
+                        valor agregado en la oportunidad, accesibilidad y calidad en datos lo cual nos hace
+                        referentes y competitivos en la región.
+                    </p>
+
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-green-600 rounded-2xl p-6 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-lg italic">NO IONIZANTES</h4>
+                        </div>
+                        <div class="bg-green-600 rounded-2xl p-6 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-lg italic">IONIZANTES</h4>
+                        </div>
+                        <div class="bg-green-600 rounded-2xl p-6 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-lg italic">LABORATORIO CLÍNICO</h4>
+                        </div>
+                        <div class="bg-green-600 rounded-2xl p-6 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-lg italic">DIAGNÓSTICO VASCULAR</h4>
+                        </div>
+                        <div class="bg-green-600 rounded-2xl p-6 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-lg italic">ULTRASONIDO</h4>
+                        </div>
+                        <div class="bg-green-600 rounded-2xl p-6 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-lg italic">RADIOLOGÍA</h4>
+                        </div>
+                    </div>
+                `
+            },
+            quirurgicos: {
+                title: 'Quirúrgicos',
+                titleColor: 'text-gray-900',
+                borderColor: 'border-green-600',
+                content: `
+                    <p class="text-gray-800 text-center leading-relaxed mb-8">
+                        Contamos con quirófanos completamente dotados con tecnología de punta para cirugías
+                        de mediana complejidad médica, se dispone además de quirófanos para cirugías
+                        ambulatorias de todas las especialidades. Para el manejo de todas nuestras cirugías,
+                        contamos con una política y procedimientos para "cirugía segura", con el fin de minimizar
+                        todos los riesgos posibles.
+                    </p>
+
+                    <div class="flex justify-center">
+                        <div class="w-48 h-48 bg-green-600 rounded-full flex items-center justify-center shadow-xl">
+                            <i class="fas fa-procedures text-white text-7xl"></i>
+                        </div>
+                    </div>
+                `
+            },
+            chequeosEjecutivos: {
+                title: 'Chequeos Ejecutivos',
+                titleColor: 'text-gray-900',
+                borderColor: 'border-green-600',
+                content: `
+                    <p class="text-gray-800 text-center leading-relaxed mb-8">
+                        Los chequeos ejecutivos son un conjunto de exámenes de salud diseñados
+                        especialmente para personas que buscan mantenerse en óptimas condiciones y
+                        detectar enfermedades relacionadas a tu estilo de vida, historia personal y
+                        familiar.
+                    </p>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+                        <div class="bg-green-600 rounded-2xl p-8 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-2xl italic">BÁSICO</h4>
+                        </div>
+                        <div class="bg-green-600 rounded-2xl p-8 text-white text-center shadow-lg">
+                            <h4 class="font-bold text-2xl italic">PERSONALIZADO</h4>
+                        </div>
+                    </div>
+                `
+            }
+        };
+
+        function openServiceModal(serviceName) {
+            const modal = document.getElementById('serviceModal');
+            const modalContent = document.getElementById('modalContent');
+            const service = serviceContent[serviceName];
+
+            if (service) {
+                modalContent.innerHTML = `
+                    <h2 class="text-3xl md:text-4xl font-bold ${service.titleColor} text-center mb-6 italic">
+                        ${service.title}
+                    </h2>
+                    ${service.content}
+                `;
+                modalContent.className = `bg-gray-50 rounded-3xl shadow-2xl overflow-hidden border-b-8 ${service.borderColor} p-8 md:p-12`;
+            }
+
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeServiceModal() {
+            const modal = document.getElementById('serviceModal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on ESC key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeServiceModal();
+            }
+        });
+    </script>
 </body>
 </html>

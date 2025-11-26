@@ -103,12 +103,16 @@
 
     <!-- Supabase JS -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="load-env.js"></script>
     <script src="supabase-config.js"></script>
     <script>
         // Load news article on page load
         document.addEventListener('DOMContentLoaded', loadNewsArticle);
 
         async function loadNewsArticle() {
+            // Initialize Supabase
+            await initSupabase();
+
             // Get news ID from URL parameter
             const urlParams = new URLSearchParams(window.location.search);
             const newsId = urlParams.get('id');
